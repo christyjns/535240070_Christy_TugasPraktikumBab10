@@ -1,0 +1,99 @@
+.heroContainer {
+    width: 100%;
+    height: 90vh; 
+    position: relative; 
+    background-color: #eee; 
+}
+
+.heroItem {
+    width: 100%;
+    height: 90vh;
+    background-size: cover;
+    background-position: center;
+}
+
+.heroOverlay {
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to right, rgba(0,0,0,0.3), rgba(0,0,0,0.0));
+}
+
+.heroCaption {
+    all: unset; 
+    position: absolute;
+    top: 50%; 
+    left: 10%; 
+    transform: translateY(-50%);
+    text-align: left; 
+    color: #fff; 
+    width: 50%; 
+}
+
+.heroTitle {
+    font-family: var(--font-serif);
+    font-size: 4.5rem; 
+    font-weight: 700;
+    line-height: 1.1;
+    color: #fff;
+    text-shadow: 0 2px 5px rgba(0,0,0,0.3); 
+    margin-bottom: 1.5rem;
+}
+
+.heroSubtitle {
+    font-family: var(--font-sans);
+    font-size: 1.2rem;
+    color: #fff;
+    text-shadow: 0 1px 3px rgba(0,0,0,0.3);
+    max-width: 450px;
+    margin-bottom: 2rem;
+}
+
+.heroButton {
+    background: transparent;
+    border: 2px solid #fff;  
+    color: #fff;
+    font-weight: 500;       
+    padding: 0.75rem 2rem;
+    border-radius: 50px; 
+    transform: translateZ(0);
+    transition: font-weight 0.2s ease-out;
+    outline: none !important; 
+    box-shadow: none !important;
+}
+
+.heroButton:hover {
+    background: transparent;
+    color: #fff;
+    border: 5px solid #fff;
+    border-width: 3px; 
+}
+
+:global(.btn).heroButton:focus, 
+:global(.btn).heroButton:active,
+:global(.btn).heroButton:focus-visible {
+    background: transparent !important; 
+    color: #fff !important;            
+    outline: none !important;          
+    box-shadow: none !important;       
+    border-color: #fff !important;    
+    font-weight: 700;
+}
+
+
+@media (max-width: 768px) {
+    .heroContainer, .heroItem {
+        height: 70vh; 
+    }
+    .heroCaption {
+        width: 80%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center; 
+    }
+    .heroTitle {
+        font-size: 2.8rem;
+    }
+    .heroSubtitle {
+        font-size: 1rem;
+    }
+}

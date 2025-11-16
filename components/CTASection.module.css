@@ -1,0 +1,115 @@
+.ctaSection {
+    background-color: var(--brand-bg-neutral);
+    padding: 5rem 0;
+    overflow: hidden;
+}
+
+.ctaRow {
+    align-items: center;
+}
+
+.leftCard {
+    background-color: var(--brand-card-bg);
+    border-radius: 1.5rem;
+    padding: 2.5rem;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.07);
+    text-align: center;
+}
+
+.cardTitle {
+    font-family: var(--font-sans); 
+    font-weight: 700;
+    font-size: 1.4rem;
+    color: var(--brand-text);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.cardSubtitle {
+    font-size: 0.9rem;
+    color: #777;
+    margin-bottom: 2rem;
+    text-transform: uppercase;
+}
+
+.tagGrid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 0.75rem;
+    margin-bottom: 2rem;
+}
+
+.tag {
+    background-color: #f8f9fa;
+    border: 1px solid #eee;
+    border-radius: 20px; 
+    padding: 0.5rem;
+    font-size: 0.8rem;
+    font-weight: 500;
+    color: #555;
+    transition: all 0.15s ease-out; 
+    cursor: pointer;
+}
+
+.tag:hover {
+    transform: scale(1.05); 
+    background-color: #f1f1f1; 
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05); 
+}
+
+.tag:active {
+    transform: scale(0.95); 
+    transition-duration: 0.5s; 
+}
+
+
+.productGrid {
+}
+
+.productItem {
+    text-align: center;
+}
+
+.productImage {
+    width: 100%;
+    height: auto;
+    margin-bottom: 1rem;
+}
+
+.productName {
+    font-family: var(--font-sans);
+    font-weight: 500;
+    font-size: 0.9rem;
+    color: var(--brand-text);
+}
+
+.textCol {
+    padding-left: 4rem; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.ctaTitle {
+    font-size: 2.8rem;
+    line-height: 1.2;
+    margin-bottom: 1.5rem;
+    color: var(--brand-text);
+}
+
+.ctaText {
+    font-size: 1.1rem;
+    color: #555;
+    line-height: 1.7;
+    margin-bottom: 2.5rem;
+    max-width: 450px;
+}
+
+/* --- Untuk Mobile --- */
+@media (max-width: 992px) {
+    .textCol {
+        padding-left: 0;
+        text-align: center;
+        margin-top: 3rem;
+    }
+}
